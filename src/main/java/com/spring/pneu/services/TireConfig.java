@@ -64,6 +64,7 @@ public class TireConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/admin/**").hasRole("ADMIN")
               //  .antMatchers("/tires/*").hasAnyRole("ADMIN", "USER")
                 .antMatchers("/authenticate").permitAll()
+                .antMatchers("/home").permitAll()
                 .antMatchers("/tires/**","/dimension/**","/brands/**","/clients/**","/admin/**").permitAll()
 
                 .anyRequest().authenticated()

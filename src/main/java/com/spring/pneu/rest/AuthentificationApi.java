@@ -27,7 +27,7 @@ public class AuthentificationApi {
     @Autowired
     private JwtUtil jwtTokenUtil;
 
-    @RequestMapping(value="/userData",method=RequestMethod.GET)
+    @RequestMapping(value="/home",method=RequestMethod.GET)
     public String hello()
     {
 
